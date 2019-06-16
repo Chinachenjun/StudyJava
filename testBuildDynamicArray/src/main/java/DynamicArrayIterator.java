@@ -2,9 +2,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class DynamicArrayIterator<E> implements Iterator<E> {
-    DynamicArray<E> darr;
-    int cursor;
-    int lastRet = -1;
+    private DynamicArray<E> darr;
+    private int cursor;
+    private int lastRet = -1;
     public DynamicArrayIterator(DynamicArray<E> darr){
         this.darr = darr;
     }

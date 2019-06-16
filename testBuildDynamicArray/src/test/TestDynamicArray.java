@@ -8,28 +8,39 @@ public class TestDynamicArray {
         for (int i = 0; i < size; i++) {
             arr.add(Math.random());
         }
-        Double d = arr.get(rnd.nextInt(size));
+
         for (int i = 0; i < size; i++) {
             System.out.println(i+":"+arr.get(i));
         }
 
         System.out.println();
         DynamicArray<Double> arr2 = new DynamicArray<Double>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             arr2.add(Math.random());
         }
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println(i+":"+arr2.get(i));
         }
         System.out.println();
-        arr2.remove(0);
+//        arr2.remove(0);
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(i+":"+arr2.get(i));
+//        }
+        DynamicArrayIterator dynamicArrayIterator = new DynamicArrayIterator(arr2);
 
-        for (int i = 0; i < 4; i++) {
-            System.out.println(i+":"+arr2.get(i));
+        for (int i = 0; i < 10; i++) {
+            dynamicArrayIterator.hasNext();
+            dynamicArrayIterator.next();
+            if(i>5) {
+                dynamicArrayIterator.remove();
+            }
         }
 
-
+        dynamicArrayIterator = new DynamicArrayIterator(arr2);
+        while (dynamicArrayIterator.hasNext()) {
+            System.out.println(dynamicArrayIterator.next());
+        }
 
     }
 }
