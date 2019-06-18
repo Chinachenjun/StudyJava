@@ -37,20 +37,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DoubleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="44" />
+            <state relative-caret-position="150">
+              <caret line="38" column="46" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="46" />
               <folding>
                 <element signature="e#240#241#0" expanded="true" />
                 <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#1719#1720#0" expanded="true" />
-                <element signature="e#1768#1769#0" expanded="true" />
-                <element signature="e#2077#2078#0" expanded="true" />
-                <element signature="e#2122#2123#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2213#2214#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1881#1882#0" expanded="true" />
+                <element signature="e#2304#2305#0" expanded="true" />
+                <element signature="e#2395#2396#0" expanded="true" />
                 <element signature="e#3645#3646#0" expanded="true" />
                 <element signature="e#3669#3670#0" expanded="true" />
-                <element signature="e#3918#3919#0" expanded="true" />
+                <element signature="e#3913#3914#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -230,16 +228,15 @@
       <option name="presentableId" value="Default" />
       <updated>1560671370349</updated>
       <workItem from="1560671372943" duration="18194000" />
-      <workItem from="1560782397909" duration="5776000" />
+      <workItem from="1560782397909" duration="6315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23970000" />
+    <option name="totallyTimeSpent" value="24509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2524013" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -258,7 +255,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32826087" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3278867" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -357,20 +354,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DoubleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="44" />
+        <state relative-caret-position="150">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="46" />
           <folding>
             <element signature="e#240#241#0" expanded="true" />
             <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
-            <element signature="e#1768#1769#0" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2122#2123#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+            <element signature="e#2395#2396#0" expanded="true" />
             <element signature="e#3645#3646#0" expanded="true" />
             <element signature="e#3669#3670#0" expanded="true" />
-            <element signature="e#3918#3919#0" expanded="true" />
+            <element signature="e#3913#3914#0" expanded="true" />
           </folding>
         </state>
       </provider>
