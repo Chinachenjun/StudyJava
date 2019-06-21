@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../testBuildDynamicArray/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testBuildDynamicArray/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testdoublelinkedlist/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testdoublelinkedlist/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testdoublelinkedlist/src/main/java/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testdoublelinkedlist/src/main/java/DoubleLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testmycollection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testmycollection/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,7 +52,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestMyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
+            <state relative-caret-position="983">
               <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,6 +115,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,8 +159,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,16 +214,20 @@
       <workItem from="1560658292700" duration="2674000" />
       <workItem from="1560782258992" duration="599000" />
       <workItem from="1560869253348" duration="926000" />
+      <workItem from="1560873524506" duration="597000" />
+      <workItem from="1560956007456" duration="599000" />
+      <workItem from="1561125647734" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4199000" />
+    <option name="totallyTimeSpent" value="5992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06883671" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.018676627" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -293,7 +298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestMyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
+        <state relative-caret-position="983">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />

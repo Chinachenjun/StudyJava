@@ -113,46 +113,35 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
     @Override
     public E set(int index, E element) {
         checkIndex(index);
-        return super.set(index, element);
+        E oldElement = nodeOf(index).element;
+        nodeOf(index).element = element;
+        return oldElement;
     }
 
     @Override
     public void add(int index, E element) {
         checkAddIndex(index);
-        if (size == 0) {
-            first = last = new Node<E>(element);
+        if (index == size || size == 0) {
+            linkedLast(element);
+        } else {
+            linkedbBefore(nodeOf(index), element);
         }
-        else if (index == 0) {
-            Node<E> oldFirst = first;
-            first = new Node<E>(element, oldFirst, null);
-            oldFirst.prev = first;
-        }
-        else if (index == size) {
-            Node<E> oldlast = last;
-            last = new Node<E>(element, null, oldlast);
-            oldlast.next = last;
-        }
-        else{
-            Node<E> newNode = new Node<E>(element);
-            Node<E> nextOfnewNode = nodeOf(index);
-            newNode.next = nextOfnewNode;
-            newNode.prev = nextOfnewNode.prev;
-            nextOfnewNode.prev = newNode;
-            nextOfnewNode.prev.next = newNode;
-        }
-        size++;
+    }
+
+    @Override
+    public boolean addAll(Collection<? extends E> c) {
+        return super.addAll(size, c);
     }
 
     public void addFirst(E e) {
-        add(0,e);
+        add(0, e);
     }
+
 
     @Override
     public E remove(int index) {
         checkIndex(index);
         Node<E> oldNole = nodeOf(index);
-
-
         return oldNole.element;
     }
 
@@ -192,5 +181,73 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
             return node;
         }
     }
+
+    private void linkedLast(E element) {
+        if (size == 0) {
+            first = last = new Node<E>(element);
+        } else {
+            Node node = new Node<E>(element, null, last);
+            last.next = node;
+            last = node;
+        }
+        size++;
+    }
+
+    private void linkedbBefore(Node<E> node, E newelement) {
+        if (node == null) {
+            throw new NoSuchElementException();
+        }
+        final Node<E> pred = node.prev;
+        final Node newNode = new Node<E>(newelement, node, pred);
+        node.prev = newNode;
+        if (node == first) {
+            first = newNode;
+        } else {
+            pred.next = newNode;
+        }
+        size++;
+    }
+
+    private E removeNode(Node<E> node) {
+
+        final E element = node.element;
+        Node<E> prevNode = node.prev;
+        Node<E> nextNode = node.next;
+
+        if (prevNode == null) {
+           first = nextNode;
+        } else {
+            prevNode.next = nextNode;
+            node.prev = null;
+        }
+
+        if (nextNode == null) {
+           last = prevNode;
+        } else {
+            nextNode.prev = prevNode;
+            node.next = null;
+        }
+
+        node.element = null;
+        size--;
+
+//        if(size == 1){
+//            first = last = null;
+//        }else if(node == first){
+//            node.next.prev = null;
+//            first = node.next;
+//            node.next = null;
+//        }else if(node == last){
+//            node.prev.next = null;
+//            last = node.prev;
+//            node.prev = null;
+//        }else{
+//            node.prev.next = node.next;
+//            node.next.prev = node.prev;
+//            node.prev = node.next = null;
+//        }
+        return element;
+    }
+
 
 }
