@@ -56,16 +56,24 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
                 if (!hasNext()) {
                     throw new NoSuchElementException();
                 }
-                Node<E> l = nextNode;
-                lastRet = cursor;
+                prevNode = nextNode;
                 cursor++;
                 nextNode = nextNode.next;
-                return l.element;
+                return prevNode.element;
             }
 
             public void remove() {
 
+                if (prevNode == null)
+                    throw new IllegalStateException();
 
+                dLList.removeNode(prevNode);
+                if (prevNode == nextNode) {
+                    nextNode = nextNode.next;
+                } else {
+                    cursor--;
+                }
+                prevNode = null;
             }
 
             public boolean hasPrevious() {
@@ -76,8 +84,7 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
                 if (!hasPrevious()) {
                     throw new NoSuchElementException();
                 }
-                prevNode = nextNode == null ? dLList.last : nextNode.prev;
-                nextNode = prevNode;
+                nextNode = prevNode = nextNode == null ? dLList.last : nextNode.prev;
                 cursor--;
                 return prevNode.element;
             }
@@ -92,16 +99,23 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
 
 
             public void set(E e) {
-
+                if (prevNode == null)
+                    throw new IllegalStateException();
+                prevNode.element = e;
             }
 
             public void add(E e) {
-
+                if (nextNode == null) {
+                    dLList.linkedLast(e);
+                }else {
+                    dLList.linkedbBefore(nextNode,e);
+                }
+                cursor ++;
+                prevNode = null;
             }
         }
         ;
-
-        return null;
+        return new LinkedListIterator<E>(index);
     }
 
     @Override
@@ -140,9 +154,9 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
 
     @Override
     public E remove(int index) {
-        checkIndex(index);
+        checkRemoveIndex(index);
         Node<E> oldNole = nodeOf(index);
-        return oldNole.element;
+        return removeNode(oldNole);
     }
 
     @Override
@@ -159,6 +173,12 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
     private void checkAddIndex(int index) {
         if (index < 0 || index > size) {
             throw new ArrayIndexOutOfBoundsException();
+        }
+    }
+
+    private void checkRemoveIndex(int index) {
+        if (index < 0 || index > size - 1) {
+            throw new NoSuchElementException();
         }
     }
 
@@ -215,14 +235,14 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> {
         Node<E> nextNode = node.next;
 
         if (prevNode == null) {
-           first = nextNode;
+            first = nextNode;
         } else {
             prevNode.next = nextNode;
             node.prev = null;
         }
 
         if (nextNode == null) {
-           last = prevNode;
+            last = prevNode;
         } else {
             nextNode.prev = prevNode;
             node.next = null;
