@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../testBuildDynamicArray/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testBuildDynamicArray/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testdoublelinkedlist/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testdoublelinkedlist/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testdoublelinkedlist/src/main/java/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testdoublelinkedlist/src/main/java/DoubleLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testmycollection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testmycollection/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -94,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1027" />
     <option name="height" value="1056" />
@@ -215,7 +214,8 @@
     <option name="totallyTimeSpent" value="7480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.018676627" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
