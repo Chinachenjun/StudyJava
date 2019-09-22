@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 public class HandleKindleWord {
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("C:\\Users\\chej\\Desktop\\编辑1"));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("C:\\Users\\chej\\Desktop\\编辑1_new"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("C:\\Users\\chej\\Desktop\\kindlework\\编辑1"));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("C:\\Users\\chej\\Desktop\\kindlework\\编辑1_new"));
         String s1;
         String pre_line="";
         while ((s1 = bufferedReader.readLine()) != null) {
